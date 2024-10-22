@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Twitter Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <ul>
+                <li><i class="fab fa-twitter twitter-icon"></i></li>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-hashtag"></i> Explore</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                <li><a href="#"><i class="fas fa-list-alt"></i> Lists</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fas fa-ellipsis-h"></i> More</a></li>
+            </ul>
+            <button class="tweet-btn">Tweet</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h2>Home</h2>
+            </header>
+
+            <!-- Tweet Box -->
+            <div class="tweet-box">
+                <div class="tweet-input">
+                    <img src="profile-pic.jpg" alt="Profile" class="profile-pic">
+                    <textarea id="tweetInput" placeholder="What's happening?" maxlength="280"></textarea>
+                </div>
+                <div class="tweet-actions">
+                    <div class="icons">
+                        <i class="far fa-image"></i>
+                        <i class="far fa-smile"></i>
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <button id="tweetBtn" class="tweet-btn">Tweet</button>
+                </div>
+            </div>
+
+            <!-- Tweets Container -->
+            <div id="tweetsContainer" class="tweets-container">
+                <!-- Tweets will appear here -->
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="trending-section">
+                <h3>Trends for you</h3>
+                <ul>
+                    <li>#JavaScript</li>
+                    <li>#Frontend</li>
+                    <li>#WebDev</li>
+                    <li>#CSSGrid</li>
+                    <li>#ReactJS</li>
+                </ul>
+            </div>
+            <div class="who-to-follow">
+                <h3>Who to follow</h3>
+                <ul>
+                    <li><img src="profile1.jpg" alt="Profile"> John Doe <button>Follow</button></li>
+                    <li><img src="profile2.jpg" alt="Profile"> Jane Smith <button>Follow</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

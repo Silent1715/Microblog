@@ -1,0 +1,172 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f8fa;
+}
+
+a {
+    text-decoration: none;
+    color: #14171a;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px auto 350px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+    border-right: 1px solid #e1e8ed;
+}
+
+.left-sidebar ul {
+    list-style: none;
+}
+
+.left-sidebar ul li {
+    margin: 20px 0;
+}
+
+.left-sidebar ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #14171a;
+}
+
+.left-sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.twitter-icon {
+    font-size: 30px;
+    color: #1da1f2;
+}
+
+.tweet-btn {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #e1e8ed;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.tweet-box {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.tweet-input {
+    display: flex;
+    align-items: center;
+}
+
+.tweet-input img.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet-input textarea {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+    outline: none;
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.tweet-actions .icons i {
+    font-size: 18px;
+    color: #1da1f2;
+    margin-right: 15px;
+}
+
+.tweets-container {
+    margin-top: 20px;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    padding: 20px;
+    background-color: white;
+}
+
+.right-sidebar h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.trending-section ul,
+.who-to-follow ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.trending-section ul li,
+.who-to-follow ul li {
+    margin-bottom: 15px;
+}
+
+.who-to-follow ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.who-to-follow ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.who-to-follow ul li button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
